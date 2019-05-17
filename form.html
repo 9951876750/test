@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+
+    <form class="pure-form" action="" onsubmit="validation()">
+        <input id="name" type="text" placeholder="Enter Name" />
+        <!-- <input id="email" type="text" placeholder="Enter email" /> -->
+
+        <button type="submit">submit</button>
+     </form> 
+<!-- <p id="demo"></p> -->
+ <script>
+var nameInput = document.getElementById('name');
+
+document.querySelector('form.pure-form').addEventListener('submit', function (e) {
+// var x = document.getElementById("name").value;
+    //prevent the normal submission of the form
+    e.preventDefault();
+// document.getElementById("demo").innerHTML = x;
+    console.log(nameInput.value);    
+});
+    </script> 
+</body>
+</html>
